@@ -1,4 +1,4 @@
-# Boilerplate for JS tasks
+# Convert temperature according to input
 
 **Read the guideline before start**
 
