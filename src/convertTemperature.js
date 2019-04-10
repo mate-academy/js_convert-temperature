@@ -4,7 +4,7 @@
  * Implement convertTemperature function:
  *
  * Function takes a string which contains temperature (integer) and one of the
- * measurement units (Celsius, Kelvin or Fahrenheit): '21C', '299K', 79F and
+ * measurement units (Celsius, Kelvin or Fahrenheit): '21C', '299K', '79F' and
  * returns an object containing temperature converted to all allowed units.
  * Values in the returned object are integers. If the converted temperature is
  * float number the function rounds it according to basic math rules
