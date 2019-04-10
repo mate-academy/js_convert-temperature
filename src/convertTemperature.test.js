@@ -24,35 +24,35 @@ test('Convert -10C', () => {
 
 test('Convert 0', () => {
   expect(convertTemperature('0'))
-    .toBe(undefined);
+    .toBe(null);
 });
 
 test('Convert zero', () => {
   expect(convertTemperature('zero'))
-    .toBe(undefined);
+    .toBe(null);
 });
 
 test('Convert 0M', () => {
   expect(convertTemperature('0M'))
-    .toBe(undefined);
+    .toBe(null);
 });
 
 test('Convert 0.00C', () => {
   expect(convertTemperature('0.00C'))
-    .toBe(undefined);
+    .toBe(null);
 });
 
 test('Convert 12CK', () => {
   expect(convertTemperature('12CK'))
-    .toBe(undefined);
+    .toBe(null);
 });
 
 test('Convert "today is 12C"', () => {
   expect(convertTemperature('today is 12C'))
-    .toBe(undefined);
+    .toBe(null);
 });
 
 test('Convert "12C is cold"', () => {
   expect(convertTemperature('12C is cold'))
-    .toBe(undefined);
+    .toBe(null);
 });
