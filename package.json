@@ -1,8 +1,8 @@
 {
-  "name": "js-task-boilerplate",
+  "name": "convert-temperature",
   "version": "1.0.0",
-  "description": "js task boilerplate",
-  "main": "src/sum.js",
+  "description": "Convert temperature according to input",
+  "main": "src/convertTemperature.js",
   "scripts": {
     "test": "jest",
     "lint": "eslint **/*.js"
