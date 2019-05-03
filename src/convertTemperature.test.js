@@ -18,7 +18,7 @@ test('Convert 125K', () => {
 });
 
 test('Convert -10C', () => {
-  expect(convertTemperature('0C'))
+  expect(convertTemperature('-10C'))
     .toEqual({ C: -10, F: 14, К: 263 });
 });
 

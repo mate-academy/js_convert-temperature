@@ -22,7 +22,38 @@
  * @return {object} - converted temperatures
  */
 function convertTemperature(temperature) {
-  // write code here
+  let kelvin;
+  let celsius;
+  let fahrenheit;
+  let temperatureNum = temperature.substring(0, temperature.length - 1);
+  temperatureNum = Number(temperatureNum);
+  if (temperature.includes('.')) {
+    return null;
+  } else if (temperature.includes('C') || temperature.includes('C')) {
+    celsius = temperatureNum;
+    fahrenheit = Math.round(temperatureNum * 1.8 + 32);
+    kelvin = temperatureNum + 273;
+  } else if (temperature.includes('F')) {
+    fahrenheit = temperatureNum;
+    celsius = Math.round((temperatureNum - 32) / 1.8);
+    kelvin = Math.round((temperatureNum - 32) / 1.8 + 273);
+  } else if (temperature.includes('K')) {
+    kelvin = temperatureNum;
+    celsius = temperatureNum - 273;
+    fahrenheit = 1.8 * temperatureNum - 459.67;
+  }
+  ;
+  if (fahrenheit === 0 && celsius === 0 && kelvin === 0) {
+    return null;
+  } else if (!fahrenheit && !celsius && !kelvin) {
+    return null;
+  } else {
+    return {
+      C: celsius,
+      F: Math.round(fahrenheit),
+      К: kelvin,
+    };
+  }
 }
 
 module.exports = convertTemperature;
