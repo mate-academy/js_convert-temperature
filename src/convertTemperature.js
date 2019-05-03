@@ -55,5 +55,4 @@ function convertTemperature(temperature) {
     };
   }
 }
-
 module.exports = convertTemperature;
