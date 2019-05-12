@@ -51,7 +51,7 @@ function convertTemperature(temperature) {
     return {
       C: celsius,
       F: Math.round(fahrenheit),
-      К: kelvin,
+      K: kelvin,
     };
   }
 }
