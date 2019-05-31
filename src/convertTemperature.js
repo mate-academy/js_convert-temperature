@@ -29,7 +29,7 @@ function convertTemperature(temperature) {
   temperatureNum = Number(temperatureNum);
   if (temperature.includes('.')) {
     return null;
-  } else if (temperature.includes('C') || temperature.includes('C')) {
+  } else if (temperature.includes('C')) {
     celsius = temperatureNum;
     fahrenheit = Math.round(temperatureNum * 1.8 + 32);
     kelvin = temperatureNum + 273;
